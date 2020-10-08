@@ -65,8 +65,12 @@ h4{
 }
 
 /* Sidebar top */
+.sidebar-logo-nav img{
+    width: 200px;
+}
 .sidebar-logo-nav ul{
     list-style: none;
+    padding-left: 0;
 }
 
 .sidebar-logo-nav i{
@@ -78,10 +82,11 @@ h4{
     color: #CACACA;
     line-height: 3em;
     text-decoration: none;
+    transition: .4s;
 }
 
 .sidebar-logo-nav a:hover{
-    color: white;
+    color: #1db954;
 }
 
 
@@ -151,6 +156,7 @@ h4{
     color: #CACACA;
     padding: 0 10px;
     line-height: 3em;
+    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     transition: .4s;
