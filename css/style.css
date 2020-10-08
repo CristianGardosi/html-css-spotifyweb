@@ -5,6 +5,24 @@ body{
     font-family: 'Noto Sans JP', sans-serif;
     color: #fff;
 }
+/* Typography */
+/* Margin */
+.mt30{
+    margin-top: 30px;
+}
+
+.mt50{
+    margin-top: 50px;
+}
+
+.mb30{
+    margin-bottom: 30px;
+}
+
+.mb50{
+    margin-bottom: 50px;
+}
+
 
 /* Div principale che setta la vh a 100% */
 #spoty-app{
@@ -52,6 +70,25 @@ body{
     height: 80px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+}
+/* Contenuti scrollable */
+.scrollable-elements{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 90px 30px;
+}
+
+.menu-nav-scrollable{
+    height: 80px;
+    background: black;
+}
+
+.scrollable-elements section{
+    height: 200px;
 }
 
 /* Player section a fondo pagina */
