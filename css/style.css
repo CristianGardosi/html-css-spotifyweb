@@ -13,18 +13,36 @@ body{
     background:linear-gradient(120deg, #1db954, #191414);
 }
 
-/* <!-- Main section con flex grow 1 per occupare tutto lo spazio tranne quello del player --> */
+/*  Main section con flex grow 1 per occupare tutto lo spazio tranne quello del player */
 #spoty-main{
     display: flex;
     flex-grow: 1;
 }
 
+/* Sidebar */
 #spoty-sidebar{
+    display: flex;
+    flex-direction: column-reverse;
     flex-basis: 250px;
     background: black;
 }
+/* Sidebar top */
+#sidebar-logo-nav{
+    flex-grow: 1;
+    background: black;
+}
+/* Sidebar bottom */
+.sidebar-account{
+    height: 100px;
+    background: #222326;
+}
 
-/* <!-- Player section a fondo pagina --> */
+/* Contenuti main centrali */
+#spoty-main-contents{
+    flex-grow: 1;
+}
+
+/* Player section a fondo pagina */
 #spoty-player{
     height: 100px;
     background: #282828;
