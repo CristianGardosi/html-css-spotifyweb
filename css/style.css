@@ -1,6 +1,31 @@
 /* GENERAL STYLES */
 body{
     margin: 0;
-    padding-top: 50px;
+    padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Div principale che setta la vh a 100% */
+#spoty-app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background:linear-gradient(120deg, #1db954, #191414);
+}
+
+/* <!-- Main section con flex grow 1 per occupare tutto lo spazio tranne quello del player --> */
+#spoty-main{
+    display: flex;
+    flex-grow: 1;
+}
+
+#spoty-sidebar{
+    flex-basis: 250px;
+    background: black;
+}
+
+/* <!-- Player section a fondo pagina --> */
+#spoty-player{
+    height: 100px;
+    background: #282828;
 }
