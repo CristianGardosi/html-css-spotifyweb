@@ -87,12 +87,50 @@ body{
     background: black;
 }
 
-.scrollable-elements section{
+.menu-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.scrollable-music-boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.scrollable-music-boxes .music-box{
+    width: 200px;
     height: 200px;
+    margin: 10px 10px;
+    background: black;
 }
 
 /* Player section a fondo pagina */
 #spoty-player{
+    display: flex;
+    justify-content: space-between;
     height: 80px;
     background: #282828;
 }
+
+.player-left,
+.player-right,
+.player-center{
+    height: 80px;
+    border: 1px solid white;
+}
+
+.player-left{
+    flex-basis: 25%;
+}
+
+.player-center{
+    flex-basis: 50%;
+}
+
+.player-right{
+    flex-basis: 25%;
+}
+
+
