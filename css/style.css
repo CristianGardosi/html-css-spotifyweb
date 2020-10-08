@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
+    color: #fff;
 }
 
 /* Div principale che setta la vh a 100% */
@@ -10,7 +11,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background:linear-gradient(120deg, #1db954, #191414);
 }
 
 /*  Main section con flex grow 1 per occupare tutto lo spazio tranne quello del player */
@@ -19,15 +19,15 @@ body{
     flex-grow: 1;
 }
 
-/* Sidebar */
+/* SIDEBAR */
 #spoty-sidebar{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-basis: 250px;
     background: black;
 }
 /* Sidebar top */
-#sidebar-logo-nav{
+.sidebar-logo-nav{
     flex-grow: 1;
     background: black;
 }
@@ -37,13 +37,25 @@ body{
     background: #222326;
 }
 
-/* Contenuti main centrali */
+/* CONTENUTI MAIN CENTRALI */
 #spoty-main-contents{
+    position: relative;
     flex-grow: 1;
+    background:linear-gradient(120deg, #1db954, #191414);
+}
+/* Top bar */
+.top-bar-elements{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 /* Player section a fondo pagina */
 #spoty-player{
-    height: 100px;
+    height: 80px;
     background: #282828;
 }
