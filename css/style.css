@@ -122,13 +122,7 @@ h4{
 .sidebar-account{
     height: 80px;
 }
-@media (max-width: 768px){
-    .sidebar-logo-nav a, 
-    .sidebar-account a{
-    display: none;
-}
 
-}
 
 /* CONTENUTI MAIN CENTRALI */
 #spoty-main-contents{
@@ -236,10 +230,46 @@ h4{
 .music-box img{
     max-width: 100%;
 }
+/* Layover */
+.layover-box-image{
+    position: relative;
+}
+
+.layover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+}
+
+.layover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: #CACACA;
+    opacity: 0;
+}
+
+.music-box:hover .layover,
+.music-box:hover .layover i {
+    opacity: 1;
+    cursor: pointer;
+}
 
 .third-category img{
     border-radius: 50%;
 }
+
+.music-box .third-category:hover .layover{
+    opacity: 1;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1200px){
     .scrollable-categories-items{
         justify-content: flex-start;
