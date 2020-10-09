@@ -27,6 +27,18 @@ h4{
     font-size: 18px;
     font-weight: 700;
 }
+
+.text-grey{
+    color: #CACACA;
+}
+
+.text-white{
+    color: #FFF;
+}
+
+.text-green{
+    color: #1db954;
+}
 /* Margin */
 .mt30{
     margin-top: 30px;
@@ -98,10 +110,6 @@ h4{
     transition: .4s;
 }
 
-.sidebar-logo-nav a i, 
-.sidebar-account a i{
-}
-
 .sidebar-account{
     margin-left: 20px;
 }
@@ -113,6 +121,13 @@ h4{
 /* Sidebar bottom */
 .sidebar-account{
     height: 80px;
+}
+@media (max-width: 768px){
+    .sidebar-logo-nav a, 
+    .sidebar-account a{
+    display: none;
+}
+
 }
 
 /* CONTENUTI MAIN CENTRALI */
@@ -272,7 +287,7 @@ h4{
     align-items: center;
     padding: 20px 0;
 }
-
+/* Left player */
 .player-left{
     flex-basis: 25%;
 }
@@ -288,6 +303,7 @@ h4{
 
 .player-left-links a{
     padding: 5px;
+    font-size: 20px;
     color: #CACACA;
     transition: .4s;
 }
@@ -295,25 +311,44 @@ h4{
 .player-left-links a:hover{
     color: #1db954;
 }
-
+/* Center player */
 .player-center{
     flex-basis: 50%;
     justify-content: center;
 }
 
 .player-center-links a{
-    padding: 5px;
+    margin: 9px;
     color: white;
     font-size: 20px;
     transition: .4s;
 }
 
+.play-button{
+    font-size: 25px;
+}
+
 .player-center-links a:hover{
     color: #1db954;
 }
-
+/* Right player */
 .player-right{
     flex-basis: 25%;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
+
+.player-right-links a{
+    margin: 9px;
+    color: #CACACA;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.player-right-links a:hover{
+    color: #1db954;
+}
+
+
 
 
