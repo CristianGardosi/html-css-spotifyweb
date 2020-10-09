@@ -140,9 +140,8 @@ h4{
     .sidebar-logo-nav a span, 
     .sidebar-account a span{
         display: none;
+    }
 }
-}
-
 
 /* CONTENUTI MAIN CENTRALI */
 #spoty-main-contents{
