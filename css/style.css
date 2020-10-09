@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Noto Sans JP', sans-serif;
     color: #fff;
 }
@@ -9,6 +10,19 @@ body{
 p{
     font-size: 16px;
 }
+
+h2{
+    display: block;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+
+h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
 
 h3{
     font-size: 20px;
@@ -78,6 +92,10 @@ h4{
     padding-right: 10px;
 }
 
+.sidebar-logo-nav h3{
+    margin-bottom: 20px;
+}
+
 .sidebar-logo-nav a{
     color: #CACACA;
     line-height: 3em;
@@ -88,6 +106,10 @@ h4{
 .sidebar-logo-nav a:hover{
     color: #1db954;
 }
+@media screen and (max-width:767px){
+
+}
+
 
 
 /* Sidebar bottom */
@@ -118,6 +140,7 @@ h4{
 
 .top-bar-elements a{
     color: #fff;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     background: transparent;
@@ -168,17 +191,56 @@ h4{
     background: black;
 }
 
-.scrollable-music-boxes{
+.scrollable-categories-items{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
 }
 
-.scrollable-music-boxes .music-box{
-    width: 200px;
-    height: 200px;
-    margin: 10px 10px;
-    background: black;
+.music-box{
+    width: calc(100% / 6);
+    padding: 15px 15px;
+}
+
+.music-box a{
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.music-box a:hover{
+    text-decoration: underline;
+}
+
+.music-box h4,
+.music-box h5{
+    text-align: center;
+}
+
+.music-box img{
+    max-width: 100%;
+}
+@media screen and (max-width: 991px){
+    .scrollable-categories-items{
+        justify-content: flex-start;
+    }
+
+    .music-box{
+        width: calc(100% / 4);
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .scrollable-categories-items{
+        justify-content: flex-start;
+    }
+
+    .music-box{
+        width: calc(100% / 2);
+    }
+    
 }
 
 /* Player section a fondo pagina */
