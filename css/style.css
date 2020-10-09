@@ -122,6 +122,26 @@ h4{
 .sidebar-account{
     height: 80px;
 }
+@media screen and (max-width:767px){
+    #spoty-sidebar{
+        display: flex;
+        flex-basis: 50px;
+        align-items: center;
+    }
+
+    .sidebar-logo-nav img{
+        display: none;
+    }
+
+    .sidebar-logo-nav h3{
+        display: none;
+    }
+
+    .sidebar-logo-nav a span, 
+    .sidebar-account a span{
+        display: none;
+}
+}
 
 
 /* CONTENUTI MAIN CENTRALI */
@@ -265,7 +285,7 @@ h4{
     border-radius: 50%;
 }
 
-.music-box .third-category:hover .layover{
+.third-category .music-box:hover .layover{
     opacity: 1;
     border-radius: 50%;
 }
