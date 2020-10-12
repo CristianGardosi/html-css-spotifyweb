@@ -427,13 +427,37 @@ h4{
 }
 @media screen and (max-width: 991px){
     .player-left{
-        flex-basis: 15%;
+        flex-basis: 30%;
+    }
+
+    .player-center{
+        flex-basis: 40%;
     }
 
     .player-right{
-        flex-basis: 35%;
+        flex-basis: 30%;
     }
 }
+
+@media screen and (max-width: 767px){
+    .player-left{
+        display: none;
+    }
+
+    .player-center{
+        margin: 0 auto;
+        flex-basis: 80%;
+    }
+
+    .player-center::after{
+        bottom: 10px;
+    }
+
+    .player-right{
+        display: none;
+    }
+}
+
 
 
 
