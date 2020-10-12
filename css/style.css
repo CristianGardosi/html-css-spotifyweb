@@ -425,6 +425,15 @@ h4{
 .player-right-links a:hover{
     color: #1db954;
 }
+@media screen and (max-width: 991px){
+    .player-left{
+        flex-basis: 15%;
+    }
+
+    .player-right{
+        flex-basis: 35%;
+    }
+}
 
 
 
